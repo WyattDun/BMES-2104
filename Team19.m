@@ -22,7 +22,7 @@ for cell = 1 : CellNum
 end
 
 %% Virus Properties
-virusNum =  100; %number of viruses at start of simulation
+virusNum =  10; %number of viruses at start of simulation
 virusLocation = zeros([virusNum, 2]);
 
 for virus = 1 : virusNum
