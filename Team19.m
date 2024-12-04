@@ -9,7 +9,7 @@ areaSize =  150;
 total_time =  1000; %frames
 dt =  1; %time step
 %% Healthy Cell Properties
-CellNum =  25; %number of healthy cells at start of simulation
+CellNum =  10; %number of healthy cells at start of simulation
 ContactThreshold = 4; % number of contacts required for a healthy cell to be removed
 CellLocation = zeros([CellNum, 2]); % Initialize location of healthy cells with zeros
 ContactCount = zeros([CellNum, 1]); % Initialize contact count for each healthy cell
@@ -23,7 +23,7 @@ for cell = 1 : ImmunoCellNum
    ImmunoCellLocation(cell, :) = PlaceCell(areaSize); % place immunocompromised cells in random location within the area
 end
 %% Virus Properties
-virusNum =  10; %number of viruses at start of simulation
+virusNum =  5; %number of viruses at start of simulation
 virusLocation = zeros([virusNum, 2]);
 for virus = 1 : virusNum
    virusLocation(virus, :) = PlaceCell(areaSize); % place viruses in random location within the area
